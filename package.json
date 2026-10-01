@@ -1,0 +1,10 @@
+{
+  "name": "calculator-app",
+  "version": "1.0.0",
+  "description": "A feature-rich web calculator app with automated tests",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "devDependencies": {}
+}

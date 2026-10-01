@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator-wrapper">
+      <div class="calculator-header">
+        <h1>Calculator</h1>
+        <button id="themeToggle" class="theme-toggle" title="Toggle Theme">🌓</button>
+      </div>
+
+      <div class="display">
+        <div id="previousOperand" class="previous-operand"></div>
+        <div id="currentOperand" class="current-operand">0</div>
+      </div>
+
+      <div class="memory-row">
+        <button id="memClear" title="Memory Clear">MC</button>
+        <button id="memRecall" title="Memory Recall">MR</button>
+        <button id="memAdd" title="Memory Add">M+</button>
+        <button id="memSub" title="Memory Subtract">M-</button>
+      </div>
+
+      <div class="keypad">
+        <button class="btn operator danger" data-action="clear">C</button>
+        <button class="btn operator" data-action="sqrt">√</button>
+        <button class="btn operator" data-action="square">x²</button>
+        <button class="btn operator" data-action="divide">/</button>
+
+        <button class="btn" data-digit="7">7</button>
+        <button class="btn" data-digit="8">8</button>
+        <button class="btn" data-digit="9">9</button>
+        <button class="btn operator" data-action="multiply">×</button>
+
+        <button class="btn" data-digit="4">4</button>
+        <button class="btn" data-digit="5">5</button>
+        <button class="btn" data-digit="6">6</button>
+        <button class="btn operator" data-action="subtract">-</button>
+
+        <button class="btn" data-digit="1">1</button>
+        <button class="btn" data-digit="2">2</button>
+        <button class="btn" data-digit="3">3</button>
+        <button class="btn operator" data-action="add">+</button>
+
+        <button class="btn" data-action="negate">±</button>
+        <button class="btn" data-digit="0">0</button>
+        <button class="btn" data-action="decimal">.</button>
+        <button class="btn equals" data-action="equals">=</button>
+      </div>
+    </div>
+
+    <div class="history-panel">
+      <div class="history-header">
+        <span>History</span>
+        <button id="clearHistory" class="clear-history">Clear</button>
+      </div>
+      <div id="historyList" class="history-list">
+        <div class="empty-history">No calculation history</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
